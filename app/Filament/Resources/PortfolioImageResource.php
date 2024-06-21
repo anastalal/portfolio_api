@@ -28,16 +28,17 @@ class PortfolioImageResource extends Resource
                 ->maxLength(255),
                 Forms\Components\Select::make('category')
                     ->required() ->options([
-                        'Branding' => 'Branding',
-                        'posts' => 'Posts',
-                        'motion_graphic_and_montag' => 'Motion graphic and montag',
-                        'websites' => 'Webites',
-                        'logo' => 'Logos',
+                        'Branding' => 'تصميم براندات',
+                        'Branding2' => 'تصميم الهوية البصرية',
+                        'posts' => 'تصميم البوستات',
+                        'motion_graphic_and_montag' => 'موشن جرافيك ومونتاج',
+                        'websites' => 'تصميم مواقع وتطبيقات',
+                        'logo' => 'تصميم شعارات',
 
                     ])
                    ,
                 Forms\Components\FileUpload::make('src')
-                    ->required()->image()
+                    ->required()->image() ->imageEditor()
                     ,
               
             ]);
