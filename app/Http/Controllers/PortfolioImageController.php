@@ -16,6 +16,10 @@ class PortfolioImageController extends Controller
     {
         return PortfolioImage::findOrFail($id);
     }
+    public function active()
+    {
+        return true;
+    }
 
     //
 }

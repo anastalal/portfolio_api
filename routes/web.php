@@ -47,6 +47,7 @@ Route::group(['prefix' => LaravelLocalization::setLocale(),
     
 });
 Route::get('/anas', [TestController::class, 'index']);
+// Route::get('/anas', [TestController::class, 'index']);
 
 /** OTHER PAGES THAT SHOULD NOT BE LOCALIZED **/
 

@@ -17,6 +17,8 @@ use App\Http\Controllers\PortfolioImageController;
 
 Route::get('/portfolio-images', [PortfolioImageController::class, 'index']);
 Route::get('/portfolio-images/{id}', [PortfolioImageController::class, 'show']);
+Route::get('/active', [PortfolioImageController::class, 'active']);
+
 // Route::post('/portfolio-images', [PortfolioImageController::class, 'store']);
 // Route::put('/portfolio-images/{id}', [PortfolioImageController::class, 'update']);
 // Route::delete('/portfolio-images/{id}', [PortfolioImageController::class, 'destroy']);
